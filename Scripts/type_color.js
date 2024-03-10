@@ -1,0 +1,20 @@
+export const typeColor = {
+    normal: 'rgb(219, 188, 130);',
+    fire: 'rgb(255, 72, 0)',
+    grass: 'rgb(17, 187, 17)',
+    water: 'rgb(15, 86, 167)',
+    poison: 'rgb(105, 18, 155)',
+    flying: 'rgb(33, 230, 230)',
+    bug: 'rgb(95, 230, 33)',
+    electric: 'rgb(248, 244, 1)',
+    ground: 'rgb(224, 177, 48)',
+    fairy: 'rgb(236, 131, 184)',
+    fighting: 'rgb(238, 5, 5)',
+    psychic: 'rgb(250, 12, 179)',
+    rock: 'rgb(143, 69, 1)',
+    steel: 'rgb(99, 94, 90)',
+    ice: 'rgb(197, 242, 245)',
+    ghost: 'rgb(42, 18, 80)',
+    dragon: 'rgb(202, 56, 20)',
+    dark: 'rgb(0, 0, 0)'
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(224, 216, 216);
+}
+
+.nav_bar {
+    margin-bottom: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(224, 96, 128);
+}
+
+.pokemon_container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    grid-auto-rows: 600px
+}
+
+.pokemon_card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.pokemon_name {
+    width: 100%;
+    height: 70px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    line-height: 2;
+    border-radius: 15px 15px 0 0;
+    background-color: rgb(224, 96, 128);
+    color: white;
+}
+
+.pokemon_image_container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.pokemon_image {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.types {
+    margin: 20px 10px 30px 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.types > span {
+    display: block;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2;
+    background-color: rgb(219, 188, 130)
+}
+
+.audio_button {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:900px) {
+    .pokemon_container {
+        max-width: 1000px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .pokemon_container {
+        max-width: 1440px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
