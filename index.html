@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conece a tus pokémon favoritos">
-    <link rel="icon" href="./icons/pokeball_743977.png">
+    <link rel="icon" href="./icons/pokeball_743977.png  ">
     <link rel="stylesheet" href="./CSS/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +14,34 @@
 </head>
 <body>
     <nav class="nav_bar" id="nav_bar">
-        <img src="./icons/pokeball_743977.png" alt="Imagen de una pokédex" width="50px" height="50px">
-        <img src="./icons/menu_2976215.png" alt="Imagen de una pokédex" width="50px" height="50px">
+        <img src="./icons/pokeball_743977.png" alt="icon" class="pokeball_icon icon">
+        <img src="./icons/menu_2976215.png" alt="menu icon" class="menu_icon icon" id="menu_icon">
     </nav>
 
-    <section class="pokemon_container" id="pokemon_container">
-       
-    </section>
+    <section class="pokemon_container" id="pokemon_container"></section>
+
+    <div class="toggle_menu" id="toggle_menu">
+        <ul class="select_types">
+            <li class="show_types option">Show Types</li>
+            <li class="type option">normal</li>
+            <li class="type option">grass</li>
+            <li class="type option">fire</li>
+            <li class="type option">water</li>
+            <li class="type option">poison</li>
+            <li class="type option">flying</li>
+            <li class="type option">bug</li>
+            <li class="type option">electric</li>
+            <li class="type option">ground</li>
+            <li class="type option">fairy</li>
+            <li class="type option">fighting</li>
+            <li class="type option">psychic</li>
+            <li class="type option">rock</li>
+            <li class="type option">steel</li>
+            <li class="type option">ice</li>
+            <li class="type option">ghost</li>
+            <li class="type option">dragon</li>
+        </ul>
+    </div>
 
     <script src="./Scripts/script.js" type="module"></script>
 </body>
