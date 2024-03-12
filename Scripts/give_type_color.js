@@ -7,7 +7,7 @@ export function giveTypeColor(count) {
         document.getElementById(`type1_${count}`),
         document.getElementById(`type2_${count}`)
     ]
-
+    
     domTypes.forEach(element => {
         for (let i = 0; i < typeKeys.length; i++) {
 

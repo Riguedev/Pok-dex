@@ -3,6 +3,12 @@ export function createInterface(resource, count) {
 
     const pokemonCard = document.createElement('div')
     pokemonCard.setAttribute('class', 'pokemon_card')
+    if (resource.types.length === 1) {
+        pokemonCard.classList.add(resource.types[0].type.name)
+    } else {
+        pokemonCard.classList.add(resource.types[0].type.name)
+        pokemonCard.classList.add(resource.types[1].type.name)
+    }
 
     const pokemonName = document.createElement('h2')
     pokemonName.setAttribute('class', 'pokemon_name')
@@ -24,7 +30,6 @@ export function createInterface(resource, count) {
     const image = document.createElement('img')
     image.setAttribute('class', 'pokemon_image')
     image.setAttribute('alt', `${resource.name} image`)
-    image.setAttribute('loading', 'lazy')
     image.src = resource.sprites.other['official-artwork'].front_default
     imageContainer.appendChild(image)
     pokemonCard.appendChild(imageContainer)

@@ -103,9 +103,10 @@ body {
 .toggle_menu {
     width: 70%;
     height: 100vh;
-    color: white;
+    max-width: 500px;
+    color: rgb(255, 255, 255);
     font-size: 1.7rem;
-    background-color: rgba(168, 29, 64, 0.8);
+    background-color: rgba(224, 96, 128, 0.8);
     position: absolute;
     z-index: 2;
     top: 0;
@@ -129,11 +130,11 @@ li:first-of-type {
 .option {
     list-style: none;
     margin-bottom: 10px;
-    border-bottom: 3px solid white;
 }
 
-.type {
-    display: none;
+.type:hover {
+    color: rgb(206, 201, 201);
+    transition: 0.2s;
 }
 
 @media screen and (min-width:900px) {
