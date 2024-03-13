@@ -113,6 +113,11 @@ body {
     right: -100%;
     transition: 0.3s;
     display: none;
+    overflow: scroll;
+}
+
+.toggle_menu::-webkit-scrollbar {
+    display: none;
 }
 
 .menu_visible {
@@ -123,16 +128,17 @@ body {
 }
 
 li:first-of-type {
-    margin-top: 30px;
+    margin-top: 60px;
     border: none;
 }
 
 .option {
     list-style: none;
     margin-bottom: 10px;
+    user-select: none;
 }
 
-.type:hover {
+.option:hover {
     color: rgb(206, 201, 201);
     transition: 0.2s;
 }

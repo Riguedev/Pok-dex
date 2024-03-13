@@ -16,7 +16,7 @@ function menuOptionListener() {
 
   for (let i = 0; i < typeOptions.length; i++) {
       typeOptions[i].addEventListener('click', () => {
-        selectType(typeOptions[i].innerHTML)
+        selectType(typeOptions[i].classList[2])
       })
   }
 }
