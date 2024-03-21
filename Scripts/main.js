@@ -9,6 +9,7 @@ const URL = 'https://pokeapi.co/api/v2/pokemon/'
 const menuIcon = document.getElementById('menu_icon')
 const typeOptions = document.getElementsByClassName('type')
 const showType = document.getElementById('show_types')
+const loadingScreen = document.getElementById('loading_screen')
 
 function menuOptionListener() {
 
@@ -25,11 +26,12 @@ async function getApiData() {
     for (let i = 1; i <= 151; i++) {
        const data = await fetch(URL+i)
        const dataToJson = await data.json()
-       await createInterface(dataToJson, i)
+       createInterface(dataToJson, i)
        audioPlayer(i)
        giveTypeColor(i)
     }
-    menuOptionListener()
+    await menuOptionListener()
+    loadingScreen.style.display = 'none'
 }
 
 getApiData()
