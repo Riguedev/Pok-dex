@@ -1,4 +1,4 @@
-# Web Pokedex Version 1.0.0
+# Web Pokedex Version 1.1.0
 
 In this proyect i want practice my HTML, CSS and JS skills, for that reason this proyect have many functions (I want to upgrade in the next future)
 
@@ -13,3 +13,7 @@ In this proyect i want practice my HTML, CSS and JS skills, for that reason this
 - HTML
 - CSS
 - JavaScript
+
+## news
+
+- Loading Screen
